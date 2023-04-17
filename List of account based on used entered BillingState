@@ -1,0 +1,12 @@
+//It will return list of account where BillingState is passed by user as method parameter. 
+
+public class AccountUtils {
+	
+    public List<Account> accountsByState( String stateCode)
+    {
+		String queryResult = 'SELECT Id, Name FROM Account WHERE BillingState =\''+stateCode+'\'';
+        list<Account> qResult = Database.query(queryResult);
+        System.debug(qResult);
+        return qResult;
+     }
+}
