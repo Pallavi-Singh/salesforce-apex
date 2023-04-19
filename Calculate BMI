@@ -1,0 +1,11 @@
+//Calculate BMI
+
+public class fitness {
+	 
+    public Decimal calculateBMI(Decimal Weight, Decimal Height){
+        Decimal bmi = (math.round(Weight/decimal.valueof(math.pow(double.valueof(Height), 2))))  ;
+        Decimal calBMI = bmi.setScale(2,RoundingMode.HALF_UP);
+        System.debug('BMI is '+calBMI);
+        return calBMI; 
+    }
+}
