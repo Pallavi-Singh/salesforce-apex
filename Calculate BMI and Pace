@@ -1,5 +1,3 @@
-//Calculate BMI
-
 public class fitness {
 	 
     public Decimal calculateBMI(Decimal Weight, Decimal Height){
@@ -7,5 +5,11 @@ public class fitness {
         Decimal calBMI = bmi.setScale(2,RoundingMode.HALF_UP);
         System.debug('BMI is '+calBMI);
         return calBMI; 
+    }
+    
+    public Decimal calculatePace(decimal distanceInKms, integer  timeInMins){
+        Decimal pace = distanceInKms / (timeInMins/60);
+        system.debug(pace);
+        return pace;
     }
 }
